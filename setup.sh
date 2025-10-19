@@ -113,7 +113,7 @@ CURFOLDER=${PWD}
 which docker > /dev/null || curl -sSL https://get.docker.com | sh
 
 # Passo 3: Baixa o projeto e entra na pasta
-[ -d ticketz-docker-acme ] || git clone https://github.com/ticketz-oss/ticketz-docker-acme.git
+[ -d ticketz-docker-acme ] || git clone https://github.com/hadagalberto/ticketz-docker-acme.git
 cd ticketz-docker-acme
 if ! git diff-index --quiet HEAD -- ; then
   echo "Salvando alterações locais com git stash push"
